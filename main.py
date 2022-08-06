@@ -198,8 +198,6 @@ class ProjectController(app_manager.RyuApp):
 
         if dst in mymac.keys():
             p = get_path(mymac[src][0], mymac[dst][0], mymac[src][1], mymac[dst][1])
-            print
-            p
             self.install_path(p, ev, src, dst)
             out_port = p[0][2]
         else:
